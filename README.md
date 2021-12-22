@@ -9,3 +9,6 @@ There are approximately 23,900 headwords.
 
 ## Source
 [Scan](https://archive.org/details/copiouscriticale00ridduoft) of the the 1849 American edition, printed by Harper & Brothers, New York, 1864.
+
+## Licence
+This work is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
