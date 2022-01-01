@@ -11,3 +11,7 @@ with open ("riddle-arnold.tsv", "r", encoding="utf-8") as f:
             print(i+1)
             bad_entries.append(entry)
 print(len(bad_entries))
+
+all_text = " ".join(proper_names)
+letter_set = set(all_text)
+print(letter_set)
