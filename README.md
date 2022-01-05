@@ -18,6 +18,7 @@ In addition to Latin and Polytonic Ancient Greek, the file contains the followin
 * The quincunx pattern ⁙ `U+2059`
 * St. Andrew's Cross ☓ `U+2613`
 * Crotchet/quarter note ♩ `U+2669`
+* Sharp sign ♯ `U+266F`
 
 ## Licence
 This work is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
