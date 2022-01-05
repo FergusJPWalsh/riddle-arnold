@@ -12,6 +12,14 @@ There are approximately 23,900 headwords.
 
 ## Riddle and Arnold's Bibliography
 
+## Anthon's Bibliography
+* L.-M. Quicherat _Vocabulaire des Noms Géographiques, Mythologiques, et Historiques de la Langue Latine_ (1846)
+* G. Mühlmann _Verzeichniss der geographischen, mythologischen, und geschichtlichen Namen_ (1845)
+* W. Freund _Wörterbuch der Lateinischen Sprache_ (1834)
+* R. Klotz _Handwörterbuch der Lateinischen Sprache_ (1853-)
+* L. Sharpe _Nomenclator Poëticus_ (1836)
+* J. Leusden _Onomasticon Sacrum_ (1665)
+* J. Bischoff, F. Möller _Vergleichendes Wörterbuch der alten, mittleren und neuen Geographie_ (1829)
 
 ## Character Set
 In addition to Latin and Polytonic Ancient Greek, the file contains the following unusual symbols:
