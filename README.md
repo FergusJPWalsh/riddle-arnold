@@ -1,5 +1,5 @@
 # Riddle-Arnold
-Digitisation of J. Riddle and T. Arnold, _A Copious and Critical English-Latin Lexicon_ (London, 1847)
+Digitisation of J. Riddle and T. Arnold, _A Copious and Critical English-Latin Lexicon_ (London, 1847; revised C. Anthon, New York, 1849)
 
 The digital text was generated using OCR and has been manually cleaned, but not edited.
 
@@ -8,7 +8,7 @@ The file is in `.tsv` format, which can be opened using Excel or a plain text ed
 There are approximately 23,900 headwords.
 
 ## Source
-[Scan](https://archive.org/details/copiouscriticale00ridduoft) of the the 1849 American edition, printed by Harper & Brothers, New York, 1864.
+[Scan](https://archive.org/details/copiouscriticale00ridduoft) of the the 1849 American edition, revised by C. Anthon, printed by Harper & Brothers, New York, 1864.
 
 ## Riddle and Arnold's Bibliography
 
