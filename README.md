@@ -19,7 +19,7 @@ There are approximately 23,900 headwords.
 * F. G. Hand ed. _Tursellinus, seu de particulis Latinis commentarii_ (1829-1845)
 * G. T. A. Krüger _Grammatik der Lateinischen Sprache_ (1842)
 * J. Billerbeck _Flora Classica_ (1824)
-* Kraus _Kritisch-etymologisches mendicinisches Lexicon_ (1831)
+* L. A. Kraus _Kritisch-etymologisches mendicinisches Lexicon_ (1831)
 * J. C. G. Ernesti _Lexicon Technologiae Latinorum Rhetoricae_ (1797)
 * G. C. Crusius _Vollständiges Wörterbuch zu den Werken des Julius Cäsar_ (1838)
 * J. Billerbeck _Vollständiges Wörterbuch zu den Lebensbeschreibungen des Cornelius Nepos_ (1825)
