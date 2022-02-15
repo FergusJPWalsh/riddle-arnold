@@ -14,7 +14,7 @@ There are approximately 23,900 headwords.
 * J. P. Krebs _Lateinischer Antibarbarus. Nebst Vorbemerkungen über Reinheit und Eleganz der Rede_ (1832)
 * J. C. W. L. Döderlein _Handbuch der lateinischen Synonymik_ (1839)
 * W. Freund _Wörterbuch der Lateinischen Sprache_ (1834)
-* E. Bonnell (Eduard Bonnellus) ed. _M. Fabii Quintiliani de Institutione Oratoria Libri Duodecim: Volumen VI: Lexicon et Indices Continens_ (1834) (_Lexicon Quintilianeum_)
+* E. Bonnell ed. _M. Fabii Quintiliani de Institutione Oratoria Libri Duodecim: Volumen VI: Lexicon et Indices Continens_ (1834) (_Lexicon Quintilianeum_)
 * K. Reisig, F. Haase _Vorlesungen über lateinische Sprachwissenschaft_ (1839)
 * F. G. Hand ed. _Tursellinus, seu de particulis Latinis commentarii_ (1829-1845)
 * G. T. A. Krüger _Grammatik der Lateinischen Sprache_ (1842)
