@@ -24,6 +24,8 @@ There are approximately 23,900 headwords.
 * G. C. Crusius _Vollständiges Wörterbuch zu den Werken des Julius Cäsar_ (1838)
 * J. Billerbeck _Vollständiges Wörterbuch zu den Lebensbeschreibungen des Cornelius Nepos_ (1825)
 
+Linnaeus is cited for names of many flora and fauna. D. A. Wyttenbach (1746-1820) is also cited for phrases pertaining to contemporary technologies, instituions and customs.
+
 ## Anthon's Bibliography
 * L.-M. Quicherat _Vocabulaire des Noms Géographiques, Mythologiques, et Historiques de la Langue Latine_ (1846)
 * G. Mühlmann _Verzeichniss der geographischen, mythologischen, und geschichtlichen Namen_ (1845)
