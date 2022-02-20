@@ -1,4 +1,4 @@
-# Riddle-Arnold
+# riddle-arnold
 Digitisation of J. Riddle and T. Arnold, _A Copious and Critical English-Latin Lexicon_ (London, 1847; revised C. Anthon, New York, 1849)
 
 The file is in `.tsv` format, which can be opened using Excel or a plain text editor. A `TAB` seperates the headword from its entry.
