@@ -4,13 +4,11 @@
 
 Digitisation of J. Riddle and T. Arnold, _A Copious and Critical English-Latin Lexicon_ (London, 1847; revised C. Anthon, New York, 1849)
 
-The file is in `.tsv` format: a `TAB` seperates the headword from its entry.
-
 The digital text was transcribed using OCR software, and is being continuously proof-read. At the present time, it has not been marked up (e.g. in TEI XML) but I hope to do so in the future.
 
 ## Using the dictionary
 
-The files ```riddle-arnold.tsv``` and ```riddle-arnold-proper-names.tsv``` contain the dictionary entries. They can be opened in a plain text editor, internet browser or Excel.
+The files ```riddle-arnold.tsv``` and ```riddle-arnold-proper-names.tsv``` contain the dictionary entries. They are in `.tsv` format, with a `TAB` seperating the headword from its entry. They can be opened in a plain text editor, internet browser or Excel.
 
 Those files have also been complied into several dictionary formats by Nikita Murzintcev as part of the [Latin Dictionaries](https://latin-dict.github.io/dictionaries/Riddle1864.html) project. You can download the files and access them on desktop and mobile using [dictionary software](https://latin-dict.github.io/docs/howto.html). 
 
