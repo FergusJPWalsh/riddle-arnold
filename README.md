@@ -1,14 +1,5 @@
 # riddle-arnold
 
-
-
-
-The file is in `.tsv` format, which can be opened using Excel or a plain text editor. A `TAB` seperates the headword from its entry.
-
-There are approximately 23,900 headwords.
-
-The text was transcribed using OCR software, and then transformed into a `.tsv` file, with a `TAB` seprating the headword from its entry.
-
 ## About
 
 Digitisation of J. Riddle and T. Arnold, _A Copious and Critical English-Latin Lexicon_ (London, 1847; revised C. Anthon, New York, 1849)
