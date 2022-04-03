@@ -10,6 +10,8 @@ The digital text was transcribed using OCR software, and is being continuously p
 
 The files ```riddle-arnold.tsv``` and ```riddle-arnold-proper-names.tsv``` contain the dictionary entries. They are in `.tsv` format, with a `TAB` seperating the headword from its entry. They can be opened in a plain text editor, internet browser or Excel.
 
+In some cases a headword may have alternate forms, these are seperated with a comma. For example ```Naples, Napoli\tNeapolis, -is (f.)```...
+
 Those files have also been complied into several dictionary formats by Nikita Murzintcev as part of the [Latin Dictionaries](https://latin-dict.github.io/dictionaries/Riddle1864.html) project. You can download the files and access them on desktop and mobile using [dictionary software](https://latin-dict.github.io/docs/howto.html). 
 
 The dictionary will also be availabe via [Logeion](https://logeion.uchicago.edu/about) in the future.
