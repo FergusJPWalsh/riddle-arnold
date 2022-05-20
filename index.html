@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Riddle Arnold English-Latin Lexicon</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js" integrity="sha256-obZACiHd7gkOk9iIL/pimWMTJ4W/pBsKu+oZnSeBIek=" crossorigin="anonymous"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="src/js/vendor/papaparse/papaparse.min.js"></script>
+    <script data-main="src/js/woodhouse" src="src/js/vendor/requirejs/2.3.3/require.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div style="text-align: center">
+        <h1>Riddle and Arnold <br><i>A Copious and Critical English-Latin Lexicon</i> (1847)</h1>
+        <h3><small>This project is still in development. If you find a mistake, submit an issue on the <a href="https://github.com/FergusJPWalsh/riddle-arnold">GitHub repository.</a></small></h3>
+        <h3><small>Search for headwords in the English-Latin Dictionary.</small></h3>
+      </div>
+      <br />
+      <div class="row">
+        <div class="col-lg-3 hidden-xs"> </div>
+        <div class="ui-widget col-lg-6 col-xs-12">
+          <input id="search" class="form-control" placeholder="Loading dictionary data..." disabled/>
+        </div>
+        <div class="col-lg-3 hidden-xs"> </div>
+      </div>
+      <br />
+      <div id="search_status"><p>&nbsp;</p></div>
+      <div id="results">
+      </div>
+    </div>
+  </body>
+</html>
