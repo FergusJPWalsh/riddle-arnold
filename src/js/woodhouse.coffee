@@ -145,6 +145,7 @@ search_for = (value) ->
   window.location = "##{value}"
   console.log("searching for: #{value}")
   $('#results').empty()
+  $('#results').append("<a href=\"http://artflsrv02.uchicago.edu/cgi-bin/efts/dicos/woodhouse_test.pl?keyword=#{value}\" target=\"_blank\">Search for \"#{value}\" in the University of Chicago Woodhouse</a><br/><br/>"
   normalized_value = normalize(value)
   if WOODHOUSE_INDEX[normalized_value]?
     for definition in WOODHOUSE_INDEX[normalized_value]
