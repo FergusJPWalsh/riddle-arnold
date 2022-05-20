@@ -145,7 +145,6 @@ search_for = (value) ->
   window.location = "##{value}"
   console.log("searching for: #{value}")
   $('#results').empty()
-  $('#results').append("")
   normalized_value = normalize(value)
   if WOODHOUSE_INDEX[normalized_value]?
     for definition in WOODHOUSE_INDEX[normalized_value]
