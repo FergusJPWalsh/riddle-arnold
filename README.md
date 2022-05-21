@@ -10,7 +10,7 @@ The digital text was transcribed using OCR software, and is being continuously p
 
 A simple online interface is provided [here](https://fergusjpwalsh.github.io/riddle-arnold)
 
-The files ```riddle-arnold.tsv``` and ```riddle-arnold-proper-names.tsv``` contain the dictionary entries. They are in `.tsv` format, with a `TAB` seperating the headword from its entry. They can be opened in a plain text editor, internet browser or Excel.
+The files ```riddle-arnold.tsv``` and ```riddle-arnold-proper-names.tsv``` contain the dictionary entries. They are in `.tsv` format, with a `TAB` seperating the headword from its entry. They can be opened in a plain text editor, internet browser or Excel. These two files are the canonical files and any edits or corrections are made to these first.
 
 In some cases a headword may have alternate forms, these are seperated with a comma. For example ```Naples, Napoli\tNeapolis, -is (f.)```...
 
