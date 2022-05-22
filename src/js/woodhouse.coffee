@@ -1,6 +1,6 @@
 ---
 ---
-WOODHOUSE_INDEX = {}
+WOODHOUSE_INDEX = new Map()
 ABBREVIATIONS = {
   "general": {
     "absol.": "Absolutely",
@@ -146,8 +146,8 @@ search_for = (value) ->
   console.log("searching for: #{value}")
   $('#results').empty()
   normalized_value = normalize(value)
-  if WOODHOUSE_INDEX[normalized_value]?
-    for definition in WOODHOUSE_INDEX[normalized_value]
+  if WOODHOUSE_INDEX.get(normalized_value)?
+    for definition in WOODHOUSE_INDEX.get(normalized_value)
       $('#results').append(definition)
     $('#results span,b').each (index, element) ->
       if ($(this).attr('style') == 'color:brown') or ($(this).attr('style') == 'color:darkviolet') or (this.localName == 'b')
@@ -162,7 +162,7 @@ search_for = (value) ->
         if this.previousSibling.nodeValue? and this.previousSibling.nodeValue.match(/(see also|see|under) $/i)
           word_links = for see_word in $(this).text().split(',')
             normalized_word = see_word.replace('.','').trim()
-            if WOODHOUSE_INDEX[normalized_word]?
+            if WOODHOUSE_INDEX.get(normalized_word)?
               "<a href=\"##{normalized_word}\"><i>#{see_word}</i></a>"
             else
               "<i>#{see_word}</i>"
@@ -187,8 +187,10 @@ $(document).ready ->
       complete: (results) ->
         console.log("dictionary parsing complete")
         for result in results.data
-          WOODHOUSE_INDEX[normalize(result[0])] ?= []
-          WOODHOUSE_INDEX[normalize(result[0])].push result[1]
+          normalized = normalize(result[0])
+          if !WOODHOUSE_INDEX.get(normalized)?
+            WOODHOUSE_INDEX.set(normalized, [])
+          WOODHOUSE_INDEX.get(normalized).push result[1]
         console.log("index built")
         $('#search').autocomplete
           delay: 600
@@ -202,7 +204,7 @@ $(document).ready ->
               search_for($('#search').val())
         $('#search').autocomplete "option", "source", (request, response) ->
           normalized_term = normalize(request.term)
-          matches = Object.keys(WOODHOUSE_INDEX).filter (h) -> h.startsWith(normalized_term)
+          matches = Array.from(WOODHOUSE_INDEX.keys()).filter (h) -> h.startsWith(normalized_term)
           matches = matches.sort (a,b) -> a.length - b.length
           response(matches[0..20])
         $('#search').prop('placeholder','Enter an English search term')
