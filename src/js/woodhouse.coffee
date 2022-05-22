@@ -204,7 +204,7 @@ $(document).ready ->
               search_for($('#search').val())
         $('#search').autocomplete "option", "source", (request, response) ->
           normalized_term = normalize(request.term)
-          matches = Object.keys(WOODHOUSE_INDEX).filter (h) -> h.startsWith(normalized_term)
+          matches = Array.from(WOODHOUSE_INDEX.keys()).filter (h) -> h.startsWith(normalized_term)
           matches = matches.sort (a,b) -> a.length - b.length
           response(matches[0..20])
         $('#search').prop('placeholder','Enter an English search term')
