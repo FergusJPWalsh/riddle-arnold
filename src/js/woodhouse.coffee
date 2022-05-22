@@ -187,10 +187,8 @@ $(document).ready ->
       complete: (results) ->
         console.log("dictionary parsing complete")
         for result in results.data
-          normalized = normalize(result[0])
-          if !WOODHOUSE_INDEX.get(normalized)?
-            WOODHOUSE_INDEX.set(normalized, [])
-          WOODHOUSE_INDEX.get(normalized).push result[1]
+          WOODHOUSE_INDEX[normalize(result[0])] ?= []
+          WOODHOUSE_INDEX[normalize(result[0])].push result[1]
         console.log("index built")
         $('#search').autocomplete
           delay: 600
@@ -204,7 +202,7 @@ $(document).ready ->
               search_for($('#search').val())
         $('#search').autocomplete "option", "source", (request, response) ->
           normalized_term = normalize(request.term)
-          matches = [...WOODHOUSE_INDEX.keys()].filter (h) -> h.startsWith(normalized_term)
+          matches = Object.keys(WOODHOUSE_INDEX).filter (h) -> h.startsWith(normalized_term)
           matches = matches.sort (a,b) -> a.length - b.length
           response(matches[0..20])
         $('#search').prop('placeholder','Enter an English search term')
