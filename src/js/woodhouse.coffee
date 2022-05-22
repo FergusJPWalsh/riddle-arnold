@@ -187,8 +187,10 @@ $(document).ready ->
       complete: (results) ->
         console.log("dictionary parsing complete")
         for result in results.data
-          WOODHOUSE_INDEX[normalize(result[0])] ?= []
-          WOODHOUSE_INDEX[normalize(result[0])].push result[1]
+          normalized = normalize(result[0])
+          if !WOODHOUSE_INDEX.get(normalized)?
+            WOODHOUSE_INDEX.set(normalized, [])
+          WOODHOUSE_INDEX.get(normalized).push result[1]
         console.log("index built")
         $('#search').autocomplete
           delay: 600
