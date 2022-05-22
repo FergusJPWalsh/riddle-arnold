@@ -16,7 +16,7 @@ The dictionary will also be availabe via [Logeion](https://logeion.uchicago.edu/
 
 ## On the files
 
-The files ```riddle-arnold.tsv``` and ```riddle-arnold-proper-names.tsv``` are the "canonical" versions of the files. Typos and emendations are made to those files, and the online interface is periodically updated to reflect the changes there. If you are downloading the files for your own use, then please use these. They are in `.tsv` format, with a `TAB` seperating the headword from its entry. They can be opened in a plain text editor, internet browser or Excel. These two files are the canonical files and any edits or corrections are made to these first.
+The files ```riddle-arnold.tsv``` and ```riddle-arnold-proper-names.tsv``` are the "canonical" versions of the files. Corrections and emendations are made to those files, and the online interface is periodically updated to reflect the changes there. If you are downloading the files for your own use, then please use these. They are in `.tsv` format, with a `TAB` seperating the headword from its entry. They can be opened in a plain text editor, internet browser or Excel. These two files are the canonical files and any edits or corrections are made to these first.
 
 In some cases a headword may have alternate forms, these are seperated with a comma. For example ```Naples, Napoli\tNeapolis, -is (f.)```...
 
