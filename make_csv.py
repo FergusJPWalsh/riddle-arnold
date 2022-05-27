@@ -1,37 +1,48 @@
 # converts the TSV file to a CSV file to be used for the GitHub page.
+import io
 import csv
+import re
 from collections import defaultdict
-from pathlib import Path
+from lingua import Language, LanguageDetectorBuilder
 
-INF = Path("data/riddle-arnold_for_web.csv")
+languages = [Language.ENGLISH, Language.LATIN]
+detector = LanguageDetectorBuilder.from_languages(*languages).build()
 
+def format_latin(string):
+    delimiters = "( \|\| )|(\. )|(, )|(: )|(; )|( \()|(\?)|(\!)|( or )|( = )"
+    tokens = re.split(delimiters, string)
+    tokens = list(filter(None, tokens))
+    formatted = []
+    for token in tokens:
+        lang = detector.detect_language_of(token)
+        if lang == None:
+            formatted.append(token)
+        elif lang.name == "LATIN":
+            token = f'<i lang="lt">{token}</i>'
+            formatted.append(token)
+        else:
+            formatted.append(token)
+    formatted = "".join(formatted)
+    italic_orig = re.escape(")</i>")
+    italic_sub = "</i>)"
+    eg_orig = re.escape('<i lang="lt">e.g.</i>')
+    eg_sub = "e.g."
+    formatted = re.sub(italic_orig, italic_sub, formatted)
+    formatted = re.sub(eg_orig, eg_sub, formatted)
+    return formatted
 
-def safe(s):
-    return s.replace("constructor", "usedtobeaconstructor")
+def format_headword(string):
+    return fr"<b>{string}</b>"
 
-
-with INF.open(encoding="utf-8") as f:
-    reader = csv.reader(f)
+with open("riddle-arnold.tsv", "r", encoding="utf-8") as f:
+    reader = csv.reader(f, delimiter = "\t")
     data = defaultdict(lambda: [])
     for row in reader:
-        data[safe(row[0])].append(safe(row[1]))
+        data[row[0]].append(format_latin(row[1]))
+        print(row[0])
 
-INF.rename(INF.with_stem(INF.stem + "_original"))
-
-with INF.open("w", encoding="utf-8", newline="\n") as f:
-    for k, vs in data.items():
-        f.write(f'"{k}","')
-        f.write("\n".join(vs))
-        f.write('"\r\n')
-# import io
-# import csv
-# new_data = []
-# with open("riddle-arnold.tsv", "r", encoding="utf-8") as f:
-    # reader = csv.reader(f, delimiter = "\t")
-    # for row in reader:
-        # row[0] = row[0].lower()
-        # new_row = f'"{row[0]}","<div style=""margin-left:1em"">{row[1]}</div>"'
-        # new_data.append(new_row)
-# g = io.open("data/riddle-arnold_for_web.csv", "w", encoding="utf-8", newline="\n")
-# for row in new_data:
-    # g.write(row+"\r\n")
+with open("data/riddle-arnold_for_web.csv", "w", encoding="utf-8", newline="\n") as g:
+    for k, v in data.items():
+        g.write(f'"{k}","<div style="margin-left:1em">{format_headword(k)} ')
+        g.write("\n".join(v))
+        g.write('</div>"\r\n')
