@@ -41,6 +41,9 @@ with open("riddle-arnold.tsv", "r", encoding="utf-8") as f:
         data[row[0]].append(format_latin(row[1]))
         print(row[0])
 
+
+# Needs to be changed to allow headwords with multiple parts of speech as in old csv file.
+# Regex post-factum fix Find: (.)(\n) Replace: $1</div>\n<div style="margin-left:1em">
 with open("data/riddle-arnold_for_web.csv", "w", encoding="utf-8", newline="\n") as g:
     for k, v in data.items():
         g.write(f'"{k}","<div style="margin-left:1em">{format_headword(k)} ')
