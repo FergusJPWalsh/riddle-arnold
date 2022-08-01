@@ -4,21 +4,21 @@
 
 Digitisation of J. Riddle and T. Arnold, _A Copious and Critical English-Latin Lexicon_ (London, 1847; revised C. Anthon, New York, 1849)
 
-The digital text was transcribed using OCR software, and is being continuously proof-read. At the present time, it has not been marked up (e.g. in TEI XML) but I hope to do so in the future.
+Please note: this project is still in development. If you find a typo or mistake, please submit an [issue report](https://github.com/FergusJPWalsh/riddle-arnold/issues/new). Thank you!
 
 ## Using the dictionary
 
-A simple online interface is provided [here](https://fergusjpwalsh.github.io/riddle-arnold)
+Search the dictionary online [here](https://fergusjpwalsh.github.io/riddle-arnold)[^1] [^1]:Search page adapted from https://github.com/dcthree/woodhouse.
 
-The main dictionary and the dictionary of proper names have been converted to several dictionary formats by Nikita Murzintcev as part of the [Latin Dictionaries](https://latin-dict.github.io/dictionaries/Riddle1864.html) project. You can download the files and access them on desktop and mobile using [dictionary software](https://latin-dict.github.io/docs/howto.html). 
+The main dictionary and the dictionary of proper names have been converted to several dictionary formats by Nikita Murzintcev as part of the [Latin Dictionaries](https://latin-dict.github.io/dictionaries/Riddle1864.html) project. You can download the files and access them on [desktop and mobile](https://latin-dict.github.io/docs/howto.html). 
 
 The dictionary will also be availabe via [Logeion](https://logeion.uchicago.edu/about) in the future.
 
-## On the files
+## The Files
 
-The files ```riddle-arnold.tsv``` and ```riddle-arnold-proper-names.tsv``` are the "canonical" versions of the files. Corrections and emendations are made to those files, and the online interface is periodically updated to reflect the changes there. If you are downloading the files for your own use, then please use these. They are in `.tsv` format, with a `TAB` seperating the headword from its entry. They can be opened in a plain text editor, internet browser or Excel. These two files are the canonical files and any edits or corrections are made to these first.
+The files ```riddle-arnold.tsv``` and ```riddle-arnold-proper-names.tsv``` are the "canonical" versions of the files. Corrections and emendations are made to those files, and the web version (```riddle-arnold_for_web.csv```) is periodically generated from those files. If you are downloading the files for your own use, then please use ```riddle-arnold.tsv``` and ```riddle-arnold-proper-names.tsv```. They are in `.tsv` format, with a `TAB` seperating the headword from its entry. They can be opened in a plain text editor, internet browser or Excel.
 
-In some cases a headword may have alternate forms, these are seperated with a comma. For example ```Naples, Napoli\tNeapolis, -is (f.)```...
+In some cases a headword may have alternate forms, these are seperated with a comma. For example ```Naples, Napoli\tNeapolis, -is (f.)```
 
 ## Source
 [Scan](https://archive.org/details/copiouscriticale00ridduoft) of the the 1849 American edition, revised by C. Anthon, printed by Harper & Brothers, New York, 1864.
