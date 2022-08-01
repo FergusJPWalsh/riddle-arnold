@@ -6,7 +6,7 @@ Digitisation of J. Riddle and T. Arnold, _A Copious and Critical English-Latin L
 
 Please note: this project is still in development. If you find a typo or mistake, please submit an [issue report](https://github.com/FergusJPWalsh/riddle-arnold/issues/new). Thank you!
 
-## Using the dictionary
+## Using the Dictionary
 
 Search the dictionary online [here](https://fergusjpwalsh.github.io/riddle-arnold) [^1]
 
