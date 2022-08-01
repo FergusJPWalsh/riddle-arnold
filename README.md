@@ -8,7 +8,9 @@ Please note: this project is still in development. If you find a typo or mistake
 
 ## Using the dictionary
 
-Search the dictionary online [here](https://fergusjpwalsh.github.io/riddle-arnold)[^1] [^1]:Search page adapted from https://github.com/dcthree/woodhouse.
+Search the dictionary online [here](https://fergusjpwalsh.github.io/riddle-arnold) [^1]
+
+[^1]:Search page adapted from https://github.com/dcthree/woodhouse.
 
 The main dictionary and the dictionary of proper names have been converted to several dictionary formats by Nikita Murzintcev as part of the [Latin Dictionaries](https://latin-dict.github.io/dictionaries/Riddle1864.html) project. You can download the files and access them on [desktop and mobile](https://latin-dict.github.io/docs/howto.html). 
 
