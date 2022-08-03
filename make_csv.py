@@ -9,7 +9,7 @@ languages = [Language.ENGLISH, Language.LATIN]
 detector = LanguageDetectorBuilder.from_languages(*languages).build()
 
 def format_latin(string):
-    delimiters = "( \|\| )|(\. )|(, )|(: )|(; )|( \()|(\?)|(\!)|( or )|( = )"
+    delimiters = "( \|\| )|(\. )|(, )|(: )|(; )|( \()|(\?)|(\!)|( or )|( = )|( and )|( \[)|(\] )|( is )|(☞)"
     tokens = re.split(delimiters, string)
     tokens = list(filter(None, tokens))
     formatted = []
@@ -27,8 +27,11 @@ def format_latin(string):
     italic_sub = "</i>)"
     eg_orig = re.escape('<i lang="lt">e.g.</i>')
     eg_sub = "e.g."
+    num_orig = "(\(\d\))"
+    num_sub = "<b>\g<1></b>"
     formatted = re.sub(italic_orig, italic_sub, formatted)
     formatted = re.sub(eg_orig, eg_sub, formatted)
+    formatted = re.sub(num_orig, num_sub, formatted)
     return formatted
 
 def format_headword(string):
@@ -41,6 +44,15 @@ with open("riddle-arnold.tsv", "r", encoding="utf-8") as f:
         data[row[0]].append(format_latin(row[1]))
         print(row[0])
 
+with open("riddle-arnold-proper-names.tsv", "r", encoding="utf-8") as h:
+    reader = csv.reader(h, delimiter = "\t")
+    for row in reader:
+        data[row[0]].append(row[1])
+        print(row[0])
+
+data = sorted(data.items())
+data = dict(data)
+print(type(data))
 
 # Needs to be changed to allow headwords with multiple parts of speech as in old csv file.
 # Regex post-factum fix Find: (.)(\n) Replace: $1</div>\n<div style="margin-left:1em">

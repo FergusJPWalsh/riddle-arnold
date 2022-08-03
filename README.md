@@ -54,6 +54,7 @@ Linnaeus is cited for names of many flora and fauna. D. A. Wyttenbach (1746-1820
 
 ## Character Set
 In addition to Latin and Polytonic Ancient Greek, the file contains the following unusual symbols:
+* The manicule ☞ `U+261E`
 * The quincunx pattern ⁙ `U+2059`
 * St. Andrew's Cross ☓ `U+2613`
 * Crotchet/quarter note ♩ `U+2669`
