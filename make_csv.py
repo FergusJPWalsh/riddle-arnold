@@ -9,7 +9,7 @@ languages = [Language.ENGLISH, Language.LATIN]
 detector = LanguageDetectorBuilder.from_languages(*languages).build()
 
 def format_latin(string):
-    delimiters = "( \|\| )|(\. )|(, )|(: )|(; )|( \()|(\?)|(\!)|( or )|( = )|( and )|( \[)|(\] )|( is )|(☞)"
+    delimiters = "( \|\| )|(\. )|(, )|(: )|(; )|( \()|(\?)|(\!)|( or )|( = )|( and )|( \[)|(\] )|(☞)|(† )|( - )"
     tokens = re.split(delimiters, string)
     tokens = list(filter(None, tokens))
     formatted = []
@@ -29,9 +29,21 @@ def format_latin(string):
     eg_sub = "e.g."
     num_orig = "(\(\d\))"
     num_sub = "<b>\g<1></b>"
+    cic_orig = re.escape('<i lang="lt">Cic.</i>')
+    cic_sub = "Cic."
+    caes_orig = re.escape('<i lang="lt">Caes.</i>')
+    caes_sub = "Caes."
+    s_orig = re.escape('<i lang="lt">s</i>.')
+    s_sub = "s."
+    v_orig = re.escape('<i lang="lt">v</i>.')
+    v_sub = "v."
     formatted = re.sub(italic_orig, italic_sub, formatted)
     formatted = re.sub(eg_orig, eg_sub, formatted)
     formatted = re.sub(num_orig, num_sub, formatted)
+    formatted = re.sub(cic_orig, cic_sub, formatted)
+    formatted = re.sub(caes_orig, caes_sub, formatted)
+    formatted = re.sub(s_orig, s_sub, formatted)
+    formatted = re.sub(v_orig, v_sub, formatted)
     return formatted
 
 def format_headword(string):
@@ -52,7 +64,6 @@ with open("riddle-arnold-proper-names.tsv", "r", encoding="utf-8") as h:
 
 data = sorted(data.items())
 data = dict(data)
-print(type(data))
 
 # Needs to be changed to allow headwords with multiple parts of speech as in old csv file.
 # Regex post-factum fix Find: (.)(\n) Replace: $1</div>\n<div style="margin-left:1em">
@@ -61,3 +72,5 @@ with open("data/riddle-arnold_for_web.csv", "w", encoding="utf-8", newline="\n")
         g.write(f'"{k}","<div style="margin-left:1em">{format_headword(k)} ')
         g.write("\n".join(v))
         g.write('</div>"\r\n')
+
+print("Finished!\a")
