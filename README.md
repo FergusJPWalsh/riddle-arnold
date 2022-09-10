@@ -8,7 +8,7 @@ Please note: this project is still in development. If you find a typo or mistake
 
 ## Using the Dictionary
 
-Search the dictionary online [here](https://fergusjpwalsh.github.io/riddle-arnold) [^1]
+Search[^1] the dictionary online [here](https://fergusjpwalsh.github.io/riddle-arnold) 
 
 [^1]:Search page adapted from https://github.com/dcthree/woodhouse.
 
