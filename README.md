@@ -14,12 +14,6 @@ Search[^1] the dictionary online [here](https://fergusjpwalsh.github.io/riddle-a
 
 The main dictionary and the dictionary of proper names have been converted to several dictionary formats by Nikita Murzintcev as part of the [Latin Dictionaries](https://latin-dict.github.io/dictionaries/Riddle1864.html) project. You can download the files and access them on [desktop and mobile](https://latin-dict.github.io/docs/howto.html). 
 
-## The Files
-
-The files ```riddle-arnold.tsv``` and ```riddle-arnold-proper-names.tsv``` are the "canonical" versions of the files. Corrections and emendations are made to those files, and the web version (```riddle-arnold_for_web.csv```) is periodically generated from those files. If you are downloading the files for your own use, then please use ```riddle-arnold.tsv``` and ```riddle-arnold-proper-names.tsv```. They are in `.tsv` format, with a `TAB` seperating the headword from its entry. They can be opened in a plain text editor, internet browser or Excel.
-
-In some cases a headword may have alternate forms, these are seperated with a comma. For example ```Naples, Napoli\tNeapolis, -is (f.)```
-
 ## Source
 [Scan](https://archive.org/details/copiouscriticale00ridduoft) of the the 1849 American edition, revised by C. Anthon, printed by Harper & Brothers, New York, 1864.
 
